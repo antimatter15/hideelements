@@ -1,0 +1,20 @@
+{
+  "name": "Hide Elements",
+  "version": "1.0",
+  "description": "Hide elements using the context menu.",
+  "permissions": [
+    "contextMenus"
+  ],
+  "background_page": "background.html",
+  "icons": {
+    "16": "edit-delete16.png",
+    "32": "edit-delete32.png",
+    "48": "edit-delete32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["hide_listener.js"]
+    }
+  ]
+}

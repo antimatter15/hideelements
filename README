@@ -1,0 +1,6 @@
+Disappointingly, the chrome context menu API makes it pretty hard to get direct access to the DOM. But this is probably a side-effect of the multiprocess chrome architecture and the web sandbox.
+
+
+Either way, this is a simple extension that demonstrates (in whatever way popped into my head first) to get DOM access to the selected element.
+
+Though I wouldn't necessarily recomend it, feel free to follow this as a sort of pattern for creating dom-enabled context menu extensions.

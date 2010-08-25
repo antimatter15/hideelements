@@ -1,0 +1,10 @@
+<script>
+chrome.contextMenus.create({
+  contexts: ['all'],
+  title: "Hide Element",
+  onclick: function(info, tab){
+    chrome.tabs.sendRequest(tab.id, 'hide')
+  }
+})
+
+</script>
