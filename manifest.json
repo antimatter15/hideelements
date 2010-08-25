@@ -1,6 +1,6 @@
 {
   "name": "Hide Elements",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Hide elements using the context menu.",
   "permissions": [
     "contextMenus"
@@ -13,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*","https://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["hide_listener.js"]
     }
   ]
